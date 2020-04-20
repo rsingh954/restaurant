@@ -1,0 +1,21 @@
+
+.banner{
+    height:10%;
+    width: 10%;
+    text-align: center;
+}
+
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/dist/Romas.jpg");
+    position: relative;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .nav{
+      height: 100%;
+      background-color: crimson;
+  }
