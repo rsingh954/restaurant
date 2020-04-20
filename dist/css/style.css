@@ -17,5 +17,14 @@ body {
 
   .nav{
       height: 100%;
-      background-color: crimson;
+
+  }
+
+  .nav-item{
+      text-align: center;
+      color: white;
+      font-family: monospace;
+      font-size: 32px;
+      width: 98px;
+      border: solid yellow;
   }
