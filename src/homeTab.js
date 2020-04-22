@@ -3,6 +3,7 @@ const homeTab = (container) => {
     navbar.classList.add("nav");
     const li = document.createElement("ol");
     li.classList.add("nav-item")
+    li.setAttribute("value", "menu");
     li.innerHTML = "Menu";
     navbar.appendChild(li);
 
@@ -13,7 +14,7 @@ const homeTab = (container) => {
 
     const location  = document.createElement("ol");
     location.classList.add("nav-item");
-    location.innerHTML = "Location ";
+    location.innerHTML = "Contact ";
     navbar.appendChild(location);
 
     container.appendChild(navbar);
@@ -22,7 +23,8 @@ const homeTab = (container) => {
 const article = (container) =>{
     const art = document.createElement("article");
     art.classList.add("art");
-    art.innerHTML =`<h1>Welcome!</h1>`
+    art.innerHTML =`<h1>Welcome to Roma's Deli</h1>`
     container.appendChild(art);
 }
 export { homeTab, article};
+

@@ -1,51 +1,58 @@
 html{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/dist/Romas.jpg");
-      position: relative;
-      background-repeat: repeat;
-      background-size: 100%;
-
-    
-  }
-  .banner{
-      height:10%;
-      width: 10%;
-      text-align: start;
-  }
+  height: 100%;
 
 
+}
+  
+body {
+    background-image: url("/dist/eat.jpg");
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 600px; /* You must set a specified height */
+    background-position: bottom; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: scroll;
+    margin: 0;
+}
+
   
   
-  body {
-      margin: 0;
+.nav{
+        display: inline;
+      }
   
-    }
-  
-  
-    .nav{
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-  
-    }
-  
-    .nav-item{
-        text-align: center;
+.nav-item, .art{
         color: white;
         font-family: monospace;
-        font-size: 32px;
-        padding-right: 5px;
-      border-right: solid wheat;
-    }
-  
-  .art{
-    text-align: center;
-      display: block;
-      position: relative;
-      color: white;
-      align-self: center;
-      margin-top: 15%;
-      border: solid wheat;
-      
+        font-size: 24px;
+        padding-right: 0px;
 
-      
-  }
+}
+
+.nav-item{
+text-align: center;
+font-style: italic;
+
+
+}
+  
+
+
+.circle{
+    position: absolute;
+    align-self: flex-end;
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: flex;
+    bottom: .1%;
+}
+
+.art{
+  text-align: center;
+  background-color: black;
+  border-bottom: solid wheat;
+  border-top: solid black;
+  font-size: 24px;
+}
