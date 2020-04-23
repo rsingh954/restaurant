@@ -3,7 +3,7 @@ const homeTab = (container) => {
     navbar.classList.add("nav");
     const li = document.createElement("ol");
     li.classList.add("nav-item")
-    li.setAttribute("value", "menu");
+    li.setAttribute("id", "menu");
     li.innerHTML = "Menu";
     navbar.appendChild(li);
 

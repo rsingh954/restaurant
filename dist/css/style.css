@@ -1,24 +1,27 @@
 html{
   height: 100%;
-
-
+  margin: 0;
 }
   
+#content{
+  margin:0 auto;
+  display: grid;
+}
 body {
     background-image: url("/dist/eat.jpg");
     background-color: #cccccc; /* Used if the image is unavailable */
-    height: 600px; /* You must set a specified height */
+    height: 100%; /* You must set a specified height */
     background-position: bottom; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-repeat: repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-    background-attachment: scroll;
     margin: 0;
+
 }
 
   
   
 .nav{
-        display: inline;
+        display: grid;
       }
   
 .nav-item, .art{
@@ -37,22 +40,26 @@ font-style: italic;
 }
   
 
-
-.circle{
-    position: absolute;
-    align-self: flex-end;
-    height: 50px;
-    width: 50px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: flex;
-    bottom: .1%;
-}
-
 .art{
   text-align: center;
+  width: 100%;
   background-color: black;
   border-bottom: solid wheat;
   border-top: solid black;
   font-size: 24px;
 }
+.row{
+  width: 50%;
+  height: 25px;
+  grid-template-columns:  3fr 3fr 3fr;
+  grid-template-rows:  3fr 3fr 3fr;
+  border: solid wheat;
+}
+
+
+.menu-grid{
+  visibility: hidden;
+  align-self: center;
+  margin-left: 35%;
+}
+
