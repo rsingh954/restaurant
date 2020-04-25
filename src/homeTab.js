@@ -17,7 +17,7 @@ const homeTab = (container) => {
 }
 
 const article = (container) =>{
-    const art = document.createElement("article");
+    const art = document.createElement("div");
     art.classList.add("art");
     art.innerHTML =`<h1>Welcome to Roma's Deli</h1>`
     container.appendChild(art);

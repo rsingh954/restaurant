@@ -6,8 +6,10 @@ import {handler} from './handleTab';
 import contact from './contactTab';
 import about from './aboutTab'
 
-const container = document.querySelector('#content');
+const containers = document.querySelector('#content');
+const container = document.createElement('div');
 
+containers.appendChild(container);
 article(container);
 homeTab(container); 
 
