@@ -21,8 +21,10 @@ body {
   
   
 .nav{
-        display: grid;
-      }
+        display: flex;
+        margin-left: 30%;
+        text-align: center;
+        }
   
 .nav-item, .art{
         color: white;
@@ -35,6 +37,9 @@ body {
 .nav-item{
 text-align: center;
 font-style: italic;
+background-color: black;
+border: solid .1em wheat;
+width: 25%;
 
 
 }
@@ -49,17 +54,43 @@ font-style: italic;
   font-size: 24px;
 }
 .row{
+  
+  text-align: start;
+  font-size: 32px;
+  color:white;
   width: 50%;
-  height: 25px;
-  grid-template-columns:  3fr 3fr 3fr;
-  grid-template-rows:  3fr 3fr 3fr;
+  height: 35px;
   border: solid wheat;
 }
 
 
 .menu-grid{
+  display: grid;
   visibility: hidden;
-  align-self: center;
   margin-left: 35%;
 }
 
+section{
+  position: absolute;
+  color: white;
+  width: 250px;
+  height: 250px;
+  top: 200px;
+  border: solid wheat;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+
+.form{
+  visibility: hidden;
+  color: white;
+  position: absolute;
+  border: solid wheat;
+  width: 250px;
+  height: 250px;
+  right: 5%;
+  top:130px;
+  font-size: 20px;
+  
+}
