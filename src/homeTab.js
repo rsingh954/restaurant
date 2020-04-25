@@ -7,14 +7,10 @@ const homeTab = (container) => {
     li.innerHTML = "Menu";
     navbar.appendChild(li);
 
-    const about  = document.createElement("ol");
-    about.classList.add("nav-item");
-    about.innerHTML = "About ";
-    navbar.appendChild(about);
-
     const location  = document.createElement("ol");
     location.classList.add("nav-item");
     location.innerHTML = "Contact ";
+    location.setAttribute("id", "contact");
     navbar.appendChild(location);
 
     container.appendChild(navbar);
