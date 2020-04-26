@@ -8,13 +8,13 @@ html{
   display: grid;
 }
 body {
-    background-image: url("/dist/eat.jpg");
+    background: url("/dist/eat.jpg");
     background-color: #cccccc; /* Used if the image is unavailable */
-    height: 100%; /* You must set a specified height */
+    height: auto; /* You must set a specified height */
     background-position: bottom; /* Center the image */
     background-repeat: repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-    width: 100%;
+    max-width: 100%;
     background-origin: content-box;
 
 }
@@ -103,4 +103,12 @@ section{
 h4{
   text-align: center;
   font-size: 18px;
+}
+
+textarea {
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
 }
